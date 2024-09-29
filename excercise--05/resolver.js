@@ -39,10 +39,10 @@ export default {
             stores
         });
 
-        newProd.id = _id
+        newProd.id = _id;
         try {
             console.log(`Storing product: ${JSON.stringify(newProd, null, 2)}`);
-            await newProd.save();
+            await newProd.save(); // saving product to db
             return newProd;
         } catch (error) {
             throw new Error(error);
@@ -65,7 +65,8 @@ export default {
         // }
 
         const _id = product.id;
-
+        
+        // new data of the product for update
         const updateData = {
             name: product.name,
             price: product.price,
@@ -77,6 +78,7 @@ export default {
         };
 
         try {
+            // update an existing product based on id
             const updatedProduct = await Products.findOneAndUpdate(
                 { id: _id }, // Query to find the product
                 { $set: updateData }, // Update operation
@@ -96,6 +98,7 @@ export default {
      */
     async getAllProducts() {
         try {
+            // get all products from db
             const allProducts = await Products.find({});
             console.log(`Stored products: ${JSON.stringify(allProducts, null, 2)}`);
             return allProducts;
@@ -109,7 +112,7 @@ export default {
      */
     async deleteProduct({ id }) {
         try {
-            await Products.deleteOne({ id })
+            await Products.deleteOne({ id });
             return `Succesfully Deleted From DB.`;
         } catch (error) {
             throw new Error(error);
@@ -118,7 +121,7 @@ export default {
 }
 
 /*
--> Learn  Query by Alias
+-> Learn Query by Alias
 -> Learn Fragmant Query
 
 query {
