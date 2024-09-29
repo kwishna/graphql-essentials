@@ -49,6 +49,7 @@ const schema = buildSchema(`
 `);
 /*
 
+----- create product request -----
 mutation {
   createProduct(product: {name: "book2", description: "holy book2", price: 110, inventory: 15, cashOnDelivery: true, soldout: AVAILABLE, stores: [{store: "LA"}, {store: "MI"}]}) {
     id
@@ -64,6 +65,7 @@ mutation {
   }
 }
 
+---- response from graphql ----
 {
   getProduct(id: "30768e76d353fae41dbc") {
     id
@@ -78,6 +80,7 @@ mutation {
     }
 }
 
+----- get all products requests -----
 {
   getAllProducts {
     id
