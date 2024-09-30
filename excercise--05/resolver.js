@@ -2,8 +2,6 @@ import { Products } from "./mongoDbConnectors";
 import { Product } from "./product"
 import { randomBytes } from "crypto";
 
-// const product_db = {}
-
 export default {
     /**
      * Get product based on id
@@ -57,7 +55,7 @@ export default {
         // ------- old code -------
         // const _id = product.id;
         // try {
-        //     const newProd = await Products.findOneAndUpdate({ id: _id })
+        //     const newProd = await Products.findOneAndUpdate({ id: _id });
         //     console.log(`Updating product: ${JSON.stringify(newProd, null, 2)}`);
         //     return newProd;
         // } catch (error) {
@@ -124,6 +122,7 @@ export default {
 -> Learn Query by Alias
 -> Learn Fragmant Query
 
+// example of 'Alias'
 query {
     widgetone: getProductCid: "627a6e03ce16f9f485942ffd") {
         ...productFragment
@@ -138,6 +137,7 @@ query {
     }
 }
 
+// example of 'Fragment'
 fragment productFragment on Product {
     name
     description
