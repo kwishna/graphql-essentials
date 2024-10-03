@@ -6,8 +6,8 @@
     "start-server": "nodemon ./excercise--03/server.js --exec babel-node -e js",
     "start": "nodemon ./personal--01/server.js --exec babel-node -e js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["graphql"],
+  "author": "Krishna Kumar Singh",
   "license": "ISC",
   "description": "",
   "dependencies": {
