@@ -9,7 +9,7 @@
   "keywords": ["graphql"],
   "author": "Krishna Kumar Singh",
   "license": "ISC",
-  "description": "",
+  "description": "GraphQL basic essentials for beginners.",
   "dependencies": {
     "@faker-js/faker": "^9.0.1",
     "@graphql-tools/schema": "^10.0.6",
