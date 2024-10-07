@@ -54,7 +54,7 @@ Before starting, make sure you have the following:
    ```bash
    npm start
    ```
-5. Open your browser and go to `http://localhost:4000/graphql` to access the GraphQL playground.
+5. Open your browser and go to `http://localhost:<PORT>/graphql` to access the GraphQL playground.
 
 ## Project Structure
 

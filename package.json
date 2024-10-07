@@ -8,10 +8,10 @@
     "compile": "tsc",
     "start:apollo": "npm run compile && node ./dist/apollo-server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["graphql"],
+  "author": "Krishna Kumar Singh",
   "license": "ISC",
-  "description": "",
+  "description": "GraphQL basic essentials for beginners.",
   "dependencies": {
     "@apollo/server": "^4.11.0",
     "@faker-js/faker": "^9.0.1",
