@@ -4,13 +4,16 @@
   "main": "index.js",
   "scripts": {
     "start-server": "nodemon ./excercise--03/server.js --exec babel-node -e js",
-    "start": "nodemon ./personal--01/server.js --exec babel-node -e js"
+    "start": "nodemon ./personal--01/server.js --exec babel-node -e js",
+    "compile": "tsc",
+    "start:apollo": "npm run compile && node ./dist/apollo-server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@apollo/server": "^4.11.0",
     "@faker-js/faker": "^9.0.1",
     "@graphql-tools/schema": "^10.0.6",
     "casual": "^1.6.2",
@@ -20,13 +23,17 @@
     "graphql-http": "^1.22.1",
     "lodash": "^4.17.21",
     "mongoose": "^8.6.3",
-    "ruru": "^2.0.0-beta.13"
+    "ruru": "^2.0.0-beta.13",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
     "@babel/node": "^7.25.0",
     "@babel/preset-env": "^7.25.4",
-    "nodemon": "^3.1.4"
+    "@types/node": "^22.6.1",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.6.2"
   }
 }
