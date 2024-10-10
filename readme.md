@@ -125,6 +125,7 @@ The final project is a simple API for managing product in store. You'll be able 
 - [Apollo Server Documentation](https://www.apollographql.com/docs/apollo-server/)
 - [GraphQL vs REST](https://graphql.org/learn/serving-over-http/)
 - [GraphQL Specification](https://spec.graphql.org/draft/)
+- [Github GraphQL Explorer](https://docs.github.com/en/graphql/overview/explorer)
 
 ## Contributing
 
